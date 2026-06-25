@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+<title>Trust Center — View Passion</title>
+<meta name="description" content="How View Passion handles your data — privacy, terms, cookies and security for players, business clients, publishers, creators and investors."/>
+<meta name="theme-color" content="#143a85"/>
+<meta property="og:title" content="Trust Center — View Passion"/>
+<meta property="og:description" content="How View Passion handles your data — privacy, terms, cookies and security for players, business clients, publishers, creators and investors."/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="View Passion"/>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"View Passion",
+"alternateName":"View Passion Studio","url":"https://viewpassion.com",
+"email":"info@viewpassion.com","telephone":"+66831313018","areaServed":"Worldwide",
+"address":{"@type":"PostalAddress","streetAddress":"68/5 Anusorn Prasert Rd, Sai Ma, Mueang Nonthaburi District","addressLocality":"Nonthaburi","postalCode":"11000","addressCountry":"TH"},
+"sameAs":["https://www.facebook.com/viewpassion","https://www.tiktok.com/@viewpassion"]}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800;900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&family=Kanit:wght@400;500;600;700&family=Prompt:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --indigo-1:#0d2552; --indigo-2:#143a85; --indigo-3:#1c4fb0;
+  --royal:#2f6bff; --blue:#2f9bff; --cyan:#22d3ff; --cyan-soft:#9becff;
+  --silver:#cfe0ff; --silver-2:#9fb6e6; --white:#f2f7ff; --spark:#ffd83a;
+  --ink:#04122c; --bg:#08204c; --muted:#b9b6d6;
+  --cvc-orange:#ff7a2e; --cvc-orange-soft:#ffb27a; --cvc-green:#7bc043; --cvc-cream:#fff4dc;
+  --panel:#15123a; --panel-2:#191545;
+  --grad-cta:linear-gradient(135deg,#22d3ff 0%,#2f9bff 48%,#2f6bff 100%);
+  --grad-text:linear-gradient(180deg,#ffffff 0%,#cfeaff 100%);
+  --glass:rgba(120,180,255,.06); --glass-2:rgba(120,190,255,.10);
+  --stroke:rgba(130,175,255,.20); --stroke-2:rgba(120,225,255,.45);
+  --font-display:'Outfit',system-ui,sans-serif;
+  --font-body:'Inter',system-ui,sans-serif;
+  --font-mono:'JetBrains Mono',monospace;
+  --ease:cubic-bezier(.22,.61,.36,1);
+  --maxw:1180px; --nav-h:64px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:var(--font-body);background:var(--bg);color:var(--white);
+  -webkit-font-smoothing:antialiased;line-height:1.65;overflow-x:hidden;min-height:100vh}
+body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
+  background-image:linear-gradient(rgba(125,205,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(125,205,255,.05) 1px,transparent 1px);
+  background-size:56px 56px;-webkit-mask-image:radial-gradient(125% 95% at 50% 0%,#000 28%,transparent 80%);
+  mask-image:radial-gradient(125% 95% at 50% 0%,#000 28%,transparent 80%);animation:gridDrift 32s linear infinite}
+@keyframes gridDrift{to{background-position:56px 56px,56px 56px}}
+.aurora{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.aurora span{position:absolute;border-radius:50%;filter:blur(95px);opacity:.42;mix-blend-mode:screen;animation:drift 22s var(--ease) infinite alternate}
+.aurora .a1{width:55vw;height:55vw;left:-12vw;top:-16vw;background:radial-gradient(circle,#2f6bff,transparent 65%)}
+.aurora .a2{width:46vw;height:46vw;right:-12vw;top:6vh;background:radial-gradient(circle,#22d3ff,transparent 65%);animation-delay:-7s}
+.aurora .a3{width:40vw;height:40vw;left:16vw;bottom:-20vw;background:radial-gradient(circle,#ff7a2e,transparent 66%);animation-delay:-13s;opacity:.3}
+@keyframes drift{to{transform:translate3d(6vw,5vh,0) scale(1.15)}}
+@media (prefers-reduced-motion:reduce){body::before,.aurora span{animation:none!important}}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+::selection{background:var(--cyan);color:var(--ink)}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px;position:relative;z-index:2}
+
+/* ---------- header ---------- */
+header.lg-nav{position:sticky;top:0;z-index:60;backdrop-filter:blur(18px);
+  background:rgba(7,24,60,.78);border-bottom:1px solid var(--stroke)}
+.lg-nav-inner{max-width:var(--maxw);margin:0 auto;padding:0 24px;height:var(--nav-h);
+  display:flex;align-items:center;justify-content:space-between;gap:16px}
+.lg-brand{display:flex;align-items:center;gap:11px;cursor:pointer;flex:none}
+.lg-brand .mark{width:30px;height:30px;border-radius:9px;display:grid;place-items:center;
+  background:var(--grad-cta);box-shadow:0 6px 18px -6px rgba(34,211,255,.7);font:900 16px/1 var(--font-display);color:#06122b}
+.lg-brand b{font:800 16px/1 var(--font-display);letter-spacing:-.01em;color:#fff}
+.lg-brand small{display:block;font:700 9.5px/1 var(--font-mono);letter-spacing:.22em;
+  text-transform:uppercase;color:var(--cyan-soft);margin-top:4px}
+.lg-nav-links{display:flex;align-items:center;gap:2px;flex-wrap:wrap;justify-content:flex-end}
+.lg-nav-links a{padding:8px 13px;border-radius:99px;font-weight:600;font-size:13.5px;
+  color:var(--silver);transition:.25s var(--ease);white-space:nowrap}
+.lg-nav-links a:hover{color:#fff;background:var(--glass)}
+.lg-nav-links a[aria-current="page"]{color:#fff;background:var(--glass-2);box-shadow:inset 0 0 0 1px var(--stroke)}
+.lg-nav-links a.back{color:var(--cyan-soft)}
+.lg-nav-links a.back:hover{color:#fff}
+@media (max-width:680px){
+  .lg-brand small{display:none}
+  .lg-nav-inner{height:auto;flex-direction:column;align-items:stretch;padding:12px 16px;gap:10px}
+  .lg-nav-links{justify-content:flex-start;gap:4px}
+  .lg-nav-links a{font-size:12.5px;padding:7px 11px}
+}
+
+/* ---------- hero ---------- */
+.lg-hero{padding:54px 0 26px}
+.crumb{font:600 12.5px/1 var(--font-mono);color:var(--silver-2);letter-spacing:.04em;margin-bottom:20px}
+.crumb a:hover{color:var(--cyan-soft)}
+.crumb span{opacity:.5;margin:0 7px}
+.eyebrow{font-family:var(--font-mono);font-size:12px;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--cyan-soft);display:inline-flex;align-items:center;gap:10px;margin-bottom:16px;font-weight:700}
+.eyebrow::before{content:"";width:26px;height:1px;background:linear-gradient(90deg,var(--cyan),transparent)}
+.eyebrow.warm{color:var(--cvc-orange-soft)}
+.eyebrow.warm::before{background:linear-gradient(90deg,var(--cvc-orange),transparent)}
+h1.sect{font-family:var(--font-display);font-weight:800;font-size:clamp(32px,5vw,54px);
+  line-height:1.03;letter-spacing:-.022em;background:var(--grad-text);-webkit-background-clip:text;
+  background-clip:text;color:transparent;max-width:18ch}
+.sect-lead{color:var(--silver);max-width:66ch;margin-top:16px;font-size:clamp(15px,1.6vw,18px)}
+.updated{margin-top:18px;display:inline-flex;align-items:center;gap:8px;font:600 12.5px/1 var(--font-mono);
+  color:var(--muted);background:var(--glass);border:1px solid var(--stroke);padding:8px 13px;border-radius:99px}
+.updated .dot{width:7px;height:7px;border-radius:50%;background:var(--cvc-green);box-shadow:0 0 0 3px rgba(123,192,67,.22)}
+
+/* ---------- 2-col policy layout ---------- */
+.lg-layout{display:grid;grid-template-columns:236px 1fr;gap:38px;align-items:start;
+  padding:14px 0 30px}
+.toc{position:sticky;top:84px}
+.toc h6{font:700 11px/1 var(--font-mono);letter-spacing:.16em;text-transform:uppercase;
+  color:var(--silver-2);margin-bottom:12px}
+.toc ol{list-style:none;counter-reset:t;display:flex;flex-direction:column;gap:1px}
+.toc li{counter-increment:t}
+.toc a{display:flex;gap:9px;padding:7px 10px;border-radius:9px;font-size:13px;color:var(--silver-2);
+  border-left:2px solid transparent;transition:.2s}
+.toc a::before{content:counter(t,decimal-leading-zero);font:700 11px/1.5 var(--font-mono);color:var(--cyan);opacity:.7}
+.toc a:hover{color:#fff;background:var(--glass)}
+.toc .tcontact{margin-top:16px;padding:12px;border:1px solid var(--stroke);border-radius:12px;
+  background:var(--panel);font-size:12.5px;color:var(--silver-2)}
+.toc .tcontact b{display:block;color:#fff;font:700 12px/1.3 var(--font-display);margin-bottom:5px}
+.toc .tcontact a{display:inline;padding:0;border:0;color:var(--cyan-soft)}
+.toc .tcontact a:hover{text-decoration:underline;background:none}
+
+/* ---------- policy body ---------- */
+.lg-body{max-width:760px;color:#c8c5e0;font-size:15px;line-height:1.72}
+.lg-body > p:first-of-type{font-size:16px;color:var(--silver)}
+.lg-body h2.h{font:800 20px/1.3 var(--font-display);color:#fff;margin:34px 0 10px;
+  padding-top:8px;scroll-margin-top:84px;display:flex;gap:11px;align-items:baseline}
+.lg-body h2.h .n{font:700 13px/1 var(--font-mono);color:var(--cyan);flex:none}
+.lg-body h3.sub{font:700 15px/1.4 var(--font-display);color:#efeefb;margin:18px 0 4px}
+.lg-body p{margin:0 0 11px}
+.lg-body ul{margin:2px 0 14px 4px;padding:0;list-style:none;display:flex;flex-direction:column;gap:7px}
+.lg-body ul li{position:relative;padding-left:20px}
+.lg-body ul li::before{content:"";position:absolute;left:2px;top:.62em;width:7px;height:7px;
+  border-radius:2px;background:var(--grad-cta);transform:rotate(45deg)}
+.lg-body b{color:#efeefb;font-weight:700}
+.lg-body i{color:var(--cvc-orange-soft);font-style:italic}
+.lg-body a.link{color:var(--cyan)}
+.lg-body a.link:hover{text-decoration:underline}
+.lg-body hr{border:0;border-top:1px solid var(--stroke);margin:30px 0}
+.lg-body table{width:100%;border-collapse:collapse;margin:12px 0 16px;font-size:13.5px}
+.lg-body th,.lg-body td{border:1px solid var(--stroke);padding:9px 11px;text-align:left;vertical-align:top}
+.lg-body th{background:rgba(255,255,255,.04);color:#fff;font-family:var(--font-display);font-weight:700}
+.lg-body td b{color:#fff}
+.notice{margin:16px 0;padding:14px 16px 14px 18px;border:1px solid var(--stroke);
+  border-left:3px solid var(--cvc-orange);border-radius:12px;background:rgba(255,122,46,.06);font-size:14px}
+.notice b{color:#fff}
+.notice a{color:var(--cvc-orange-soft);font-weight:600}
+.notice a:hover{text-decoration:underline}
+.callout{margin:16px 0;padding:14px 16px;border:1px solid var(--stroke);border-radius:12px;
+  background:var(--glass);font-size:14px}
+.aud{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:14px 0 6px}
+.aud .a{background:var(--panel);border:1px solid var(--stroke);border-radius:14px;padding:14px 16px}
+.aud .a h3{font:700 14px/1.3 var(--font-display);color:#fff;margin:0 0 6px;display:flex;align-items:center;gap:8px}
+.aud .a h3 svg{width:18px;height:18px;color:var(--cyan)}
+.aud .a p{margin:0;font-size:13px;color:var(--silver-2);line-height:1.6}
+
+/* ---------- trust center specifics ---------- */
+.trust-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(232px,1fr));gap:14px;margin:30px 0 8px}
+.trust-badge{display:flex;gap:13px;align-items:center;background:var(--panel);
+  border:1px solid var(--stroke);border-radius:16px;padding:16px}
+.trust-badge .ic{width:46px;height:46px;border-radius:13px;flex:none;display:grid;place-items:center;
+  background:linear-gradient(150deg,rgba(34,211,255,.16),rgba(47,107,255,.16));border:1px solid var(--stroke)}
+.trust-badge.warm .ic{background:linear-gradient(150deg,rgba(255,122,46,.18),rgba(123,192,67,.16))}
+.trust-badge .ic svg{width:24px;height:24px;color:var(--cyan)}
+.trust-badge.warm .ic svg{color:var(--cvc-orange-soft)}
+.trust-badge b{display:block;font:700 15px/1.25 var(--font-display);color:#fff}
+.trust-badge span{display:block;font-size:12.5px;color:var(--muted);margin-top:3px}
+.sec-h{font:800 clamp(22px,3vw,30px)/1.1 var(--font-display);letter-spacing:-.02em;margin:0 0 6px;color:#fff}
+.sec-block{padding:42px 0 6px;border-top:1px solid var(--stroke);margin-top:42px}
+.sec-lead{color:var(--silver);max-width:62ch;font-size:15.5px}
+.pol-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:16px;margin-top:24px}
+.pol-card{display:flex;flex-direction:column;gap:10px;background:var(--panel);border:1px solid var(--stroke);
+  border-radius:18px;padding:22px;transition:.3s var(--ease)}
+.pol-card:hover{transform:translateY(-3px);border-color:var(--stroke-2);box-shadow:0 24px 50px -24px rgba(34,211,255,.4)}
+.pol-card .pi{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;
+  background:linear-gradient(150deg,rgba(34,211,255,.16),rgba(47,107,255,.18));border:1px solid var(--stroke)}
+.pol-card .pi svg{width:22px;height:22px;color:var(--cyan)}
+.pol-card h3{font:800 18px/1.2 var(--font-display);color:#fff}
+.pol-card p{font-size:13.5px;color:var(--silver-2);flex:1;line-height:1.6}
+.pol-card .go{font:700 13px/1 var(--font-mono);letter-spacing:.04em;color:var(--cyan-soft);
+  display:inline-flex;align-items:center;gap:7px;margin-top:2px}
+.pol-card .go svg{width:15px;height:15px;transition:.25s}
+.pol-card:hover .go svg{transform:translateX(4px)}
+.contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-top:22px}
+.cinfo{display:flex;align-items:center;gap:13px;background:var(--panel);border:1px solid var(--stroke);
+  border-radius:14px;padding:15px 17px;transition:.25s var(--ease)}
+.cinfo:hover{border-color:var(--stroke-2);transform:translateY(-2px)}
+.cinfo .cic{width:40px;height:40px;border-radius:11px;flex:none;display:grid;place-items:center;
+  background:var(--glass);border:1px solid var(--stroke)}
+.cinfo .cic svg{width:20px;height:20px;color:var(--cyan);fill:none;stroke:currentColor;stroke-width:2}
+.cinfo .cl{font:700 10.5px/1 var(--font-mono);letter-spacing:.16em;text-transform:uppercase;color:var(--silver-2)}
+.cinfo .cv{font-size:14px;color:#fff;margin-top:5px;font-weight:600;word-break:break-word}
+
+/* ---------- footer ---------- */
+footer{border-top:1px solid var(--stroke);margin-top:64px;padding:50px 0 38px;position:relative;z-index:2}
+.foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.15fr;gap:clamp(16px,2.6vw,34px);margin-bottom:30px}
+.foot-brand p{color:var(--silver);max-width:34ch;font-size:14px;margin-top:14px}
+.foot-brand .fb-mark{display:flex;align-items:center;gap:10px}
+.foot-brand .fb-mark .mark{width:28px;height:28px;border-radius:8px;display:grid;place-items:center;
+  background:var(--grad-cta);font:900 15px/1 var(--font-display);color:#06122b}
+.foot-brand .fb-mark b{font:800 16px/1 var(--font-display);color:#fff}
+.foot-col h5{font-family:var(--font-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--silver-2);margin-bottom:15px}
+.foot-col a{display:block;color:var(--silver);font-size:14.5px;padding:6px 0;transition:.25s}
+.foot-col a:hover{color:var(--cyan-soft);transform:translateX(3px)}
+.foot-bottom{display:flex;justify-content:space-between;align-items:center;gap:20px;padding-top:24px;border-top:1px solid var(--stroke);flex-wrap:wrap}
+.foot-bottom small{color:var(--silver-2);font-size:12.5px}
+.socials{display:flex;gap:10px}
+.socials a{width:36px;height:36px;border-radius:10px;display:grid;place-items:center;background:var(--glass);border:1px solid var(--stroke);transition:.25s}
+.socials a:hover{background:var(--glass-2);border-color:var(--stroke-2);transform:translateY(-2px)}
+.socials svg{width:18px;height:18px;fill:currentColor;color:var(--silver)}
+.socials a:hover svg{color:#fff}
+
+a:focus-visible,button:focus-visible{outline:2px solid var(--cyan);outline-offset:3px;border-radius:6px}
+
+@media (max-width:900px){
+  .lg-layout{grid-template-columns:1fr;gap:8px}
+  .toc{position:static;margin-bottom:8px;border:1px solid var(--stroke);border-radius:14px;padding:14px;background:var(--panel)}
+  .toc ol{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px}
+  .toc .tcontact{display:none}
+}
+@media (max-width:640px){ .foot-grid{grid-template-columns:1fr;gap:26px} }
+
+/* Thai font swap if needed */
+html.lang-th body,html.lang-th .lg-body{font-family:'Prompt','Kanit',sans-serif}
+html.lang-th h1.sect,html.lang-th .lg-body h2.h,html.lang-th .sec-h{font-family:'Kanit',sans-serif}
+</style>
+</head>
+<body>
+<header class="lg-nav"><div class="lg-nav-inner"><a class="lg-brand" href="index.html" aria-label="View Passion home"><span class="mark">V</span><span><b>View Passion</b><small>Trust Center</small></span></a><nav class="lg-nav-links" aria-label="Legal pages"><a href="index.html" class="back">← Back to site</a><a href="trust-center.html" aria-current="page">Trust Center</a><a href="privacy-policy.html">Privacy</a><a href="terms-conditions.html">Terms</a><a href="cookie-policy.html">Cookies</a></nav></div></header>
+<main>
+<div class="wrap">
+<section class="lg-hero">
+  <div class="crumb"><a href="index.html">View Passion</a><span>/</span>Trust Center</div>
+  <span class="eyebrow warm">Trust center</span>
+  <h1 class="sect">Your data, handled with care.</h1>
+  <p class="sect-lead">One transparent set of policies for everyone we work with — players, business clients, advertising partners, publishers, creators, and investors — across View Passion and every title we ship, including <i>Cat vs Cucumber</i>.</p>
+  <span class="updated"><span class="dot"></span>Last updated · 23 June 2026 · applies studio-wide</span>
+</section><div class="trust-row">
+    <div class="trust-badge"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></span><div><b>GDPR &amp; PDPA aligned</b><span>EU/UK &amp; Thailand data law</span></div></div>
+    <div class="trust-badge"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 018 0v3"/></svg></span><div><b>Secured &amp; encrypted</b><span>Industry-standard safeguards</span></div></div>
+    <div class="trust-badge"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M5.6 5.6l12.8 12.8"/></svg></span><div><b>We never sell your data</b><span>CCPA/CPRA opt-out honored</span></div></div>
+    <div class="trust-badge warm"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 14a4 4 0 007 0"/><path d="M9 9.5h.01M15 9.5h.01"/></svg></span><div><b>Kid-safe by design</b><span>COPPA age-gating</span></div></div>
+  </div><p class="sect-lead" style="margin-top:22px">These commitments apply studio-wide. The three policies below set out the detail, and they cover both our own titles and the games and services we run for partners.</p><section class="sec-block" style="border-top:none;padding-top:20px;margin-top:8px">
+    <h2 class="sec-h">The policies</h2>
+    <p class="sec-lead">Link any of these directly — each lives on its own page so you can attach it to a store listing, a contract, a pitch, or a campaign.</p>
+    <div class="pol-cards">
+      <a class="pol-card" href="privacy-policy.html"><span class="pi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"/></svg></span><h3>Privacy Policy</h3><p>What we collect, why, how we share it, and your rights — for players, business contacts, publishers, creators, and investors.</p><span class="go">Read policy <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      <a class="pol-card" href="terms-conditions.html"><span class="pi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5"/><path d="M10 13h6M10 17h6"/></svg></span><h3>Terms &amp; Conditions</h3><p>The rules for using our games and services, plus how publishing, co-development, creator, and investment deals are handled.</p><span class="go">Read terms <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      <a class="pol-card" href="cookie-policy.html"><span class="pi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a9 9 0 109 9 3 3 0 01-3-3 3 3 0 01-3-3 3 3 0 01-3-3z"/><path d="M9 11h.01M13 15h.01M15.5 10.5h.01"/></svg></span><h3>Cookie Policy</h3><p>The cookies, SDKs, and trackers we use across games and websites — and how to manage your preferences.</p><span class="go">Read policy <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+    </div>
+  </section><section class="sec-block">
+    <h2 class="sec-h">Who these policies are for</h2>
+    <p class="sec-lead">One transparent standard, whoever you are. Here is the data we typically handle for each group and why.</p>
+    <div class="aud">
+  <div class="a"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="11" rx="4"/><path d="M7 12h3M8.5 10.5v3"/><circle cx="16" cy="11" r="1"/><circle cx="18.5" cy="13.5" r="1"/></svg>Players</h3><p>Profile &amp; social-login info, device and advertising IDs, gameplay, purchases, and support messages — used to run our games, save progress, personalize play, deliver and measure ads, and prevent fraud.</p></div>
+  <div class="a"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"/></svg>Business &amp; B2B clients</h3><p>Name, role, company, business contact, and contractual, billing and tax details — used to deliver services and manage contracts, invoicing and co-marketing.</p></div>
+  <div class="a"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11v2l12 4V7L3 11z"/><path d="M15 9a3.5 3.5 0 010 6"/></svg>Advertising &amp; UA partners</h3><p>Device and advertising identifiers, ad impressions and engagement, attribution and install source, and aggregated audience signals — used to deliver and measure campaigns.</p></div>
+  <div class="a"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/></svg>Publishers &amp; co-development</h3><p>Business-contact details, and — where we operate or run UA for a title on a partner's behalf — player data processed under a Data Processing Agreement, with the partner as controller.</p></div>
+  <div class="a"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0116 0"/></svg>Creators &amp; influencers</h3><p>Contact and company details and campaign coordination, used to run content collaborations and co-marketing activity.</p></div>
+  <div class="a"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l9-4 9 4v10l-9 4-9-4z"/><path d="M3 7l9 4 9-4M12 11v10"/></svg>Vendors &amp; suppliers</h3><p>Contact and contractual details, used to manage the services they provide and process payments.</p></div>
+  <div class="a"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="M12 12l7-7"/></svg>Investors</h3><p>Information reasonably required for due diligence, investor relations, reporting and compliance — processed under contract and never sold.</p></div>
+</div>
+  </section><section class="sec-block">
+    <h2 class="sec-h">Security &amp; compliance</h2>
+    <div class="aud" style="margin-top:18px">
+      <div class="a"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 018 0v3"/></svg>Security</h3><p>Industry-standard technical and organizational measures, including encryption in transit and access controls. No system is perfectly secure — please play safely and report anything suspicious.</p></div>
+      <div class="a"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>Compliance</h3><p>Aligned with the EU/UK GDPR, California CCPA/CPRA, and Thailand’s PDPA, with COPPA-style age-gating. We never sell personal data and honor the Global Privacy Control (GPC) signal where applicable.</p></div>
+      <div class="a"><h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5"/><path d="M10 13h6M10 17h6"/></svg>Controller / processor</h3><p>For our own games we are the data controller. When we operate or run UA for a partner’s title, we act as processor under a Data Processing Agreement, with the partner as controller.</p></div>
+    </div>
+  </section><section class="sec-block">
+    <h2 class="sec-h">Make a request or get in touch</h2>
+    <p class="sec-lead">To exercise a data right, ask a privacy question, or discuss working together, reach us here.</p>
+    <div class="contact-grid">
+      <a class="cinfo" href="mailto:info@viewpassion.com"><span class="cic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5h18v14H3z"/><path d="M3 6l9 7 9-7"/></svg></span><div><div class="cl">Data &amp; general</div><div class="cv">info@viewpassion.com</div></div></a>
+      <a class="cinfo" href="mailto:catvscucumber@viewpassion.com"><span class="cic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5h16v11H8l-4 4z"/><path d="M8 9h8M8 12h5"/></svg></span><div><div class="cl">Game support</div><div class="cv">catvscucumber@viewpassion.com</div></div></a>
+      <a class="cinfo" href="tel:+66831313018"><span class="cic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h4l2 5-3 2a12 12 0 005 5l2-3 5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg></span><div><div class="cl">Telephone</div><div class="cv">+66 83 131 3018</div></div></a>
+      <div class="cinfo"><span class="cic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s7-6 7-12a7 7 0 10-14 0c0 6 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></span><div><div class="cl">Address</div><div class="cv">68/5 Anusorn Prasert Rd, Sai Ma, Mueang Nonthaburi, Nonthaburi 11000, Thailand</div></div></div>
+    </div>
+    <div class="notice" style="margin-top:24px"><b>Looking for the Cat vs Cucumber versions?</b> See the game’s own
+      <a href="https://www.catvscucumber.games/privacypolicy" target="_blank" rel="noopener">Privacy Policy</a>,
+      <a href="https://www.catvscucumber.games/terms&conditions" target="_blank" rel="noopener">Terms</a>, and
+      <a href="https://www.catvscucumber.games/cookie" target="_blank" rel="noopener">Cookie Policy</a> — the studio-wide
+      policies here apply to <i>Cat vs Cucumber</i> too.</div>
+  </section><p class="sect-lead" style="margin-top:34px;font-size:13px;color:var(--muted)">© 2026 View Passion Co., Ltd. All rights reserved. These policies apply studio-wide across View Passion and all titles, including Cat vs Cucumber.</p>
+</div>
+</main>
+<footer><div class="wrap">
+  <div class="foot-grid">
+    <div class="foot-brand">
+      <div class="fb-mark"><span class="mark">V</span><b>View Passion</b></div>
+      <p>Gaming One Stop. We create and publish mobile games built for fun, strategy, and players worldwide — creators of <i>Cat vs Cucumber</i>.</p>
+    </div>
+    <div class="foot-col"><h5>Explore</h5>
+      <a href="index.html#view-game">The Game</a><a href="index.html#view-studio">Studio</a>
+      <a href="index.html#view-works">Works</a><a href="index.html#view-partner">Partner</a></div>
+    <div class="foot-col"><h5>Legal</h5>
+      <a href="trust-center.html">Trust Center</a><a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-conditions.html">Terms &amp; Conditions</a><a href="cookie-policy.html">Cookie Policy</a></div>
+    <div class="foot-col"><h5>Get in touch</h5>
+      <a href="mailto:info@viewpassion.com">info@viewpassion.com</a><a href="tel:+66831313018">+66 83 131 3018</a>
+      <a href="mailto:catvscucumber@viewpassion.com">Game support</a></div>
+  </div>
+  <div class="foot-bottom">
+    <small>© 2026 View Passion · Gaming One Stop. All rights reserved.</small>
+    <div class="socials">
+      <a href="https://www.facebook.com/viewpassion" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 10-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.7l-.4 2.9h-2.3v7A10 10 0 0022 12z"/></svg></a>
+      <a href="https://www.tiktok.com/@viewpassion" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M16 8.2a5.8 5.8 0 003.4 1.1V6.7a3.2 3.2 0 01-3.4-3.2h-2.6v11.2a2.3 2.3 0 11-2.3-2.3c.2 0 .4 0 .6.1V9.8a5 5 0 00-.6 0 4.9 4.9 0 104.9 4.9V8.2z"/></svg></a>
+      <a href="mailto:info@viewpassion.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5h18v14H3z"/><path d="M3 6l9 7 9-7"/></svg></a>
+    </div>
+  </div>
+</div></footer>
+<div class="aurora"><span class="a1"></span><span class="a2"></span><span class="a3"></span></div>
+</body>
+</html>
